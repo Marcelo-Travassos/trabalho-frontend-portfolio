@@ -76,7 +76,7 @@ Após isso, o portfólio estará pronto para uso.
 
 ---
 
-## Desenvolvedores 9
+## Desenvolvedores 
 
 - <img src="img/github.png" width="15"> [Emilaine](https://github.com/emilainezx)
 - <img src="img/github.png" width="15"> [Marcelo](https://github.com/Marcelo-Travassos)
