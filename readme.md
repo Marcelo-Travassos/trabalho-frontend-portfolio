@@ -78,8 +78,8 @@ Após isso, o portfólio estará pronto para uso.
 
 ## Desenvolvedores
 
-- <img src="img/github.png" width="15"> [Emilaine Bernardo](https://github.com/emilainezx)
-- <img src="img/github.png" width="15"> [Marcelo Travassos](https://github.com/Marcelo-Travassos)
+- <img src="img/github.png" width="15"> [Emilaine](https://github.com/emilainezx)
+- <img src="img/github.png" width="15"> [Marcelo](https://github.com/Marcelo-Travassos)
 - <img src="img/github.png" width="15"> [Allyson](https://github.com/AllyPts)
 
 ---
