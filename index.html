@@ -1,0 +1,244 @@
+<!DOCTYPE html> <!-- Declara o tipo de documento HTML5. -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil. -->
+<head> <!-- Início das configurações e metadados do documento. -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis. -->
+    <title>Portfólio</title> <!-- Título exibido na aba do navegador. -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS local. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"> <!-- Importa Bootstrap via CDN. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Importa ícones do Font Awesome. -->
+
+</head> <!-- Fim das configurações e metadados do documento. -->
+<body> <!-- Início do corpo do documento. -->
+    <header id="inicio"> <!-- Início do cabeçalho da página com ID para navegação. -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> <!-- Barra de navegação fixa no topo com estilo escuro. -->
+            <div class="container-fluid px-0"> <!-- Container fluido para a barra de navegação. -->
+                <a class="navbar-brand fw-bold" href="#">PORTFÓLIO</a> <!-- Marca da barra de navegação com texto em negrito. -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!-- Botão para colapsar o menu em telas pequenas. -->
+                <span class="navbar-toggler-icon"></span> <!-- Ícone do botão para expandir/colapsar o menu em telas pequenas. -->
+                </button> <!-- Fecha o botão do menu colapsável. -->
+                <div class="collapse navbar-collapse bg-dark" id="navbarNav"> <!-- Itens do menu que colapsam em telas pequenas. -->
+                <ul class="navbar-nav ms-auto"> <!-- Lista de itens de navegação alinhados à direita. -->
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#inicio">Início</a></li> <!-- Link para a seção inicial da página. -->
+                <li class="nav-item"><a class="nav-link" href="#sobre_nos">Sobre</a></li> <!-- Link para a seção "Sobre nós". -->
+                <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li> <!-- Link para a seção de projetos. -->
+                <li class="nav-item"><a class="nav-link" href="#footer_midia">Contatos</a></li> <!-- Link para a seção de contatos no rodapé. -->
+                </ul> <!-- Fecha a lista de itens de navegação. -->
+            </div> <!-- Fecha o container fluido da barra de navegação. -->
+        </nav> <!-- Fecha a barra de navegação. -->
+    </header> <!-- Fim do cabeçalho da página. -->
+    <section id="hero"> <!-- Seção principal (hero) da página. -->
+        <div class="container text-center"> <!-- Container centralizado para o conteúdo do hero. -->
+            <div class="info">  <!-- Informações principais do hero. -->
+            <h1 class="display-4 fw-bold">Desenvolvedores em formação</h1> <!-- Título principal com estilo destacado. -->
+            <h2 class="lead mb-4">Criando interfaces bonitas,funcionais e responsivas.</h2> <!-- Subtítulo com estilo de destaque e margem inferior. -->
+            <p>O projeto demonstra criatividade e aplicação do framework, além de boas práticas de HTML e CSS.</p> <!-- Parágrafo descritivo sobre o projeto. -->
+            <a href="#projetos"> <!-- Link para os projetos. -->
+                <button type="button" class="btn btn-secondary">Ver nossos projetos</button> <!-- Botão estilizado com Bootstrap para navegar até a seção de projetos. -->
+            </a> <!-- Fecha o link para os projetos. -->
+            </div> <!-- Fecha a div de informações do hero. -->
+    </section> <!-- Fecha seção hero. -->
+        <div id="carouselExampleIndicators" class="carousel slide"> <!-- Carrossel principal com indicadores. -->
+    <div class="carousel-indicators"> <!-- Bolinhas de navegação do carrossel. -->
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <!-- Botões indicadores para navegar entre os slides do carrossel. -->
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button> <!-- Botões indicadores para navegar entre os slides do carrossel. -->
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> <!-- Botões indicadores para navegar entre os slides do carrossel. -->
+    </div> <!-- Div para os indicadores do carrossel. -->
+    <div class="carousel-inner"> <!-- Primeiro slide do carrossel; marcado como ativo para iniciar exibido. -->
+        <div class="carousel-item active"> <!-- Primeiro slide do carrossel; marcado como ativo para iniciar exibido. -->
+        <img src="img/PáginadeServiços.jpg" class="d-block w-100" alt="Dashboard administrativo"> <!-- Imagem do primeiro slide do carrossel, representando o dashboard administrativo. -->
+        </div> <!-- Imagem do primeiro slide do carrossel, representando o dashboard administrativo. -->
+        <div class="carousel-item">  <!-- Segundo slide do carrossel. -->
+        <img src="img/DashboardAdministrativo.jpg" class="d-block w-100" alt="Loja virtual"> <!-- Imagem do segundo slide do carrossel, representando a loja virtual. -->
+        </div> <!-- Fecha o segundo slide do carrossel. -->
+        <div class="carousel-item"> <!-- Terceiro slide do carrossel. -->
+        <img src="img/SiteInstitucional.jpg" class="d-block w-100" alt="Portifolio pessoal.jpeg"> <!-- Imagem do terceiro slide do carrossel, representando o portfólio pessoal. -->
+        </div> <!-- Fecha o terceiro slide do carrossel. -->
+    </div> <!-- Fecha a div do conteúdo do carrossel. -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> <!-- Botão para voltar o carrossel para o slide anterior. -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- Ícone padrão de navegação para voltar. -->
+        <span class="visually-hidden">Previous</span> <!-- Texto acessível para tecnologias assistivas. -->
+    </button> <!-- Fecha o botão de navegação anterior. -->
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">  <!-- Botão para avançar o carrossel para o próximo slide. -->
+        <span class="carousel-control-next-icon" aria-hidden="true"></span> <!-- Ícone padrão de navegação para avançar. -->
+        <span class="visually-hidden">Next</span> <!-- Texto acessível para tecnologias assistivas. -->
+    </button> <!-- Fecha o botão de navegação próximo. -->
+    </div> <!-- Finaliza o carrossel de imagens. -->
+    <main class="container my-5"> <!-- Inicia o conteúdo principal da página com margem vertical. -->
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="projetos"> <!-- Inicia uma linha do grid do Bootstrap com 1 coluna em telas pequenas e 3 em médias, com espaçamento entre os cards. -->
+
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/SiteInstitucional.jpg" class="card-img-top img-fluid w-100" alt="img"> <!-- Imagem do card representando o site institucional. -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. -->
+                    <h5 class="card-title">Site Institucional</h5> <!-- Título do card descrevendo o projeto. -->
+                    <p class="card-text">Página profissional desenvolvida para apresentar informações de uma empresa fictícia, com layout limpo e totalmente responsivo.</p> <!-- Descrição breve do conteúdo do projeto. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão para visualizar mais detalhes do projeto. -->
+                </div> <!-- Fecha a área interna do card. -->
+            </div> <!-- Fecha o card. --> 
+        </div> <!-- Fecha a coluna que contém o card. -->
+
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/SistemadeLogin.jpg" class="card-img-top img-fluid w-100 " alt="img"> <!-- Imagem do card representando o sistema de login. -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. -->
+                    <h5 class="card-title">Sistema de Login</h5> <!-- Título do card descrevendo o projeto. -->
+                    <p class="card-text">Formulário funcional com validação e interface moderna, simulando autenticação de usuários.</p> <!-- Descrição breve do conteúdo do projeto. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão para visualizar mais detalhes do projeto. -->
+                </div> <!-- Fecha a área interna do card. -->
+            </div> <!-- Fecha o card. -->
+        </div> <!-- Fecha a coluna que contém o card. -->
+
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/PortfólioPessoal.jpg" class="card-img-top" alt="img"> <!-- Imagem do card representando o portfólio pessoal. -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. -->
+                    <h5 class="card-title">Portfólio Pessoal</h5> <!-- Título do card descrevendo o projeto. -->
+                    <p class="card-text">Site criado para exibir habilidades, projetos e contato de um desenvolvedor, utilizando HTML, CSS e Bootstrap.</p> <!-- Descrição breve do conteúdo do projeto. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão para visualizar mais detalhes do projeto. -->
+                </div> <!-- Fecha a área interna do card. -->
+            </div> <!-- Fecha o card. --> 
+        </div> <!-- Fecha a coluna que contém o card. -->
+
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/DashboardAdministrativo.jpg" class="card-img-top" alt="img"> <!-- Imagem do card representando o dashboard administrativo. -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. -->
+                    <h5 class="card-title">Dashboard Administrativo</h5> <!-- Título do card descrevendo o projeto. -->
+                    <p class="card-text">Painel com gráficos e estatísticas para simulação de gerenciamento interno..</p> <!-- Descrição breve do conteúdo do projeto. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão para visualizar mais detalhes do projeto. -->
+                </div> <!-- Fecha a área interna do card. -->
+            </div> <!-- Fecha o card. -->
+        </div> <!-- Fecha a coluna que contém o card. -->
+
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/LojaVirtualSimples.jpg" class="card-img-top" alt="img"> <!-- Imagem do card representando a loja virtual simples. -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. -->
+                    <h5 class="card-title">Loja Virtual Simples</h5> <!-- Título do card descrevendo o projeto. -->
+                    <p class="card-text">Página de produtos com cards, preços e área de detalhes, inspirada em lojas reais.</p> <!-- Descrição breve do conteúdo do projeto. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão para visualizar mais detalhes do projeto. -->
+                </div> <!-- Fecha a área interna do card. -->
+            </div> <!-- Fecha o card. -->
+        </div> <!-- Fecha a coluna que contém o card. -->
+
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/PáginadeServiços.jpg" class="card-img-top" alt="img"> <!-- Imagem do card representando a página de serviços. -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. --> 
+                    <h5 class="card-title">Página de Serviços</h5> <!-- Título do card descrevendo o projeto. -->
+                    <p class="card-text">Layout com descrição dos serviços oferecidos, botões de ação e uma apresentação visual agradável.</p> <!-- Descrição breve do conteúdo do projeto. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão para visualizar mais detalhes do projeto. -->
+                </div> <!-- Fecha a área interna do card. -->
+            </div> <!-- Fecha o card. -->
+        </div> <!-- Fecha a coluna que contém o card. -->
+
+       
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/PesquisaUX.jpg" class="card-img-top" alt="img"> <!-- Imagem do card representando a pesquisa UX/UI. -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. -->
+                    <h5 class="card-title">Pesquisa UX/UI</h5> <!-- Título do card descrevendo o projeto. -->
+                    <p class="card-text">Estudo sobre boas práticas de experiência do usuário, abordando protótipos e testes.</p> <!-- Descrição breve do conteúdo do projeto. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão para visualizar mais detalhes do projeto. -->
+                </div> <!-- Fecha a área interna do card. -->
+            </div> <!-- Fecha o card. -->
+        </div> <!-- Fecha a coluna que contém o card. -->
+
+        
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/RelatórioTécnico.jpg" class="card-img-top" alt="img"> <!-- Imagem do card representando o relatório técnico. -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. -->
+                    <h5 class="card-title">Relatório Técnico</h5> <!-- Título do card descrevendo o projeto. -->
+                    <p class="card-text">Documento elaborado analisando tecnologias utilizadas no desenvolvimento web</p> <!-- Descrição breve do conteúdo do projeto. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão para visualizar mais detalhes do projeto. -->
+                </div> <!-- Fecha a área interna do card. -->
+            </div> <!-- Fecha o card. -->
+        </div> <!-- Fecha a coluna que contém o card. -->
+
+        
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/PrototipagemdeInterface.jpg" class="card-img-top" alt="img"> <!-- Imagem do card representando a prototipagem de interface. -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. -->
+                    <h5 class="card-title">Prototipagem de Interface</h5> <!-- Título do card descrevendo o projeto. -->
+                    <p class="card-text">Wireframes criados para simular o fluxo de navegação de um aplicativo.</p> <!-- Descrição breve do conteúdo do projeto. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão para visualizar mais detalhes do projeto. -->
+                </div> <!-- Fecha a área interna do card. -->
+            </div> <!-- Fecha o card. -->
+        </div> <!-- Fecha a coluna do layout. -->
+
+        
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/DocumentaçãodoSistema.jpg" class="card-img-top" alt="img"> <!-- Imagem do card representando a documentação do sistema. -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. -->
+                    <h5 class="card-title">Documentação do Sistema</h5> <!-- Título do card descrevendo o projeto. -->
+                    <p class="card-text">Arquivo completo descrevendo requisitos, funcionalidades e arquitetura de um sistema.</p> <p class="card-text">Arquivo completo descrevendo requisitos, funcionalidades e arquitetura de um sistema.</p> <!-- Descrição breve do conteúdo do projeto. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão estilizado com Bootstrap para acessar mais detalhes. -->
+                </div> <!-- Fecha a área interna do card. -->
+            </div> <!-- Fecha o card. -->
+        </div> <!-- Fecha a coluna que contém o card. -->
+
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/PlataformadeEstudos.jpg" class="card-img-top" alt="img"> <!-- Imagem do card representando a plataforma de estudos. -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. -->
+                    <h5 class="card-title">Plataforma de Estudos</h5> <!-- Título do card descrevendo o projeto. -->
+                    <p class="card-text">Aplicação desenvolvida para organizar conteúdos, materiais e tarefas de estudo. Interface simples e responsiva para facilitar o uso diário.</p> <!-- Texto explicativo falando sobre funcionalidades e propósito da plataforma. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão estilizado para acessar mais detalhes do projeto. --> 
+                </div> <!-- Final da área interna do card. -->
+            </div> <!-- Final do card completo. -->
+        </div> <!-- Fecha a segunda coluna do layout. -->
+
+        <div class="col"> <!-- Abre uma coluna do grid do Bootstrap para organizar o layout. -->
+            <div class="card h-100 shadow"> <!-- Cria um card com altura total e sombra decorativa. -->
+                <img src="img/SobreNós.jpg" class="card-img-top" alt="img"> <!-- Imagem do card representando a seção "Sobre Nós". -->
+                <div class="card-body"> <!-- Área interna do card onde ficam os textos e botões. -->
+                    <h5 class="card-title">Nossa equipe</h5> <!-- Título do card apresentando a equipe. -->
+                    <p class="card-text">Somos um trio de estudantes de ADS, desenvolvendo projetos modernos com HTML, CSS, JavaScript e Bootstrap, focando em organização, responsividade e boas práticas.</p> <!-- Texto principal descrevendo a equipe. -->
+                    <a href="#" class="btn btn-primary">Ver projetos</a> <!-- Botão para visualizar os projetos. -->
+                </div> <!-- Fecha a área interna do card. -->
+            </div> <!-- Fecha o card completo. -->
+        </div> <!-- Fecha a coluna do layout. -->
+
+    </div><!-- Fecha a div class row. -->
+
+    </main> <!-- Finaliza o conteúdo principal da página. -->
+<br> <!-- Quebra de linha para espaçamento extra. -->
+<br> <!-- Outra quebra de linha para aumentar o espaço visual. -->
+<br> <!-- Terceira quebra de linha adicionando ainda mais distância. -->
+    <footer class="footer"> <!-- Início do rodapé do site. -->
+        <div class="card text-center"> <!-- Início do rodapé do site com um card centralizado. -->
+        <div class="card-header"> <!-- Início do cabeçalho do card. -->
+            
+        </div> <!-- Fecha o cabeçalho do card. -->
+        <br> <!-- Insere uma quebra de linha para espaçamento vertical. -->
+        <div id="sobre_nos"> <!-- Div para a seção "Sobre nós". -->
+            <h5 class="card-title">Sobre nós</h5> <!-- Título da seção "Sobre nós". -->
+            <p class="card-text">Somos um trio de desenvolvedores do curso de Analise e Desenvolvimento De Sistemas (ADS). Criamos um portfólio simples, organizado e responsivo utilizando Html, Css e Bootstrap 5.0.</p> <!-- Descrição sobre a equipe de desenvolvedores. -->
+        <div id="footer_midia"> <!-- Div para os ícones de mídias sociais. -->
+            <a href="https://github.com/emilainezx" class="footer_link" id="github" target="_blank"> <!-- Link para o GitHub de Emilaine, abre em nova aba. -->
+                <i class="fa-brands fa-github"></i> <!-- Ícone do GitHub de Emilaine. -->
+            </a> <!-- Fecha o link do GitHub de Emilaine. -->
+
+            <a href="https://github.com/Marcelo-Travassos" class="footer_link" id="github" target="_blank"> <!-- Link para o GitHub de Marcelo, abre em nova aba. -->
+                <i class="fa-brands fa-github"></i> <!-- Ícone do GitHub de Marcelo. -->
+            </a> <!-- Fecha o link do GitHub de Marcelo. -->
+            
+            <a href="https://github.com/AllyPts" class="footer_link" id="github" target="_blank"> <!-- Link para o GitHub de Allyson, abre em nova aba. -->
+                <i class="fa-brands fa-github"></i> <!-- Ícone do GitHub de Allyson. -->
+            </a> <!-- Fecha o link do GitHub de Allyson. -->
+        </div> </div> <!-- Fecha a div que contém os ícones de mídias. -->
+        <div id="Copyright">  <!-- Div para o texto de direitos autorais. -->
+            <p>Copyright &copy; 2025 Emilaine, Marcelo and Allyson. Todos os direitos reservados.</p> <!-- Exibe os direitos autorais do site. -->
+        </div> <!-- Fecha a div do copyright. -->
+        <div> <!-- Abre uma div para exibir a fonte do design. -->
+            <a class="fonte" target="_blank" href="http://www.freepik.com">Designed by pikisuperstar / Freepik</a> <!-- Link para a autoria do design, abre em nova aba. -->
+        </div> <!-- Fecha a div da autoria. -->
+        </div> <!-- Fecha uma div. -->
+    </footer> <!-- Finaliza o rodapé do site. -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Importa scripts JS do Bootstrap para funcionalidades interativas. -->
+</body> <!-- Finaliza o corpo do documento. -->
+</html> <!-- Finaliza a estrutura HTML do site. -->

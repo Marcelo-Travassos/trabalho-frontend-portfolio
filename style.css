@@ -1,0 +1,185 @@
+*{
+    margin: 0;   /* Remove todas as margens padrão dos elementos */
+    padding: 0;  /* Remove todos os espaçamentos internos padrão */
+}
+
+html {
+    font-family: 𝐒𝐞𝐫𝐢𝐟 𝐁𝐨𝐥𝐝; /* Define a fonte padrão da página */
+    font-size: 18px;           /* Define o tamanho base da fonte */
+}
+
+body {
+    background-image: url(img/backgroubd.jpg); /* Define imagem de fundo */
+    background-size: cover;    /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    min-height: 100vh;         /* Garante altura mínima de 100% da tela */
+}
+
+a {
+    color: #fff;               /* Links ficam brancos */
+    text-decoration: none;     /* Remove sublinhado dos links */
+    transition: 0.3s;          /* Suaviza efeitos de hover em 0.3 segundos */
+}
+
+.logo {
+    font-size: 24px;           /* Tamanho da fonte do logo */
+    text-transform: uppercase; /* Deixa todas as letras maiúsculas */
+    letter-spacing: 4px;       /* Espaçamento entre letras */
+}
+
+nav {   
+    display: flex;             /* Usa flexbox para organizar itens */
+    justify-content: space-around; /* Espaça itens igualmente */
+    align-items: center;       /* Alinha verticalmente ao centro */
+    font-family: 𝙼𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎; /* Fonte monoespaçada */
+    background: #0c2949;       /* Cor de fundo azul escuro */
+    height: 8vh;               /* Altura de 8% da tela */
+}
+
+.nav-list {
+    list-style: none;          /* Remove marcadores da lista */
+    display: flex;             /* Organiza itens da lista em linha */
+}
+
+.nav-list li {
+    letter-spacing: 3px;       /* Espaçamento entre letras */
+    margin-left: 32px;         /* Espaço entre cada item da lista */
+}
+
+#hero {
+    height: 100vh;             /* Ocupa toda a altura da tela */
+    color: #ffffff;            /* Texto branco */
+    display: flex;             /* Flexbox para organizar conteúdo */
+    flex-direction: column;    /* Organiza em coluna */
+    align-items: flex-start;   /* Alinha à esquerda */
+    gap: 15px;                 /* Espaço entre elementos */
+}
+
+.container {
+    width: 90%;                /* Largura de 90% da tela */
+    height: 100%;              /* Altura total */
+    max-width: 1200px;         /* Limite máximo de largura */
+    margin: 0 auto;            /* Centraliza horizontalmente */
+    display: flex;             /* Flexbox */
+    align-items: center;       /* Alinha verticalmente */
+    justify-content: center;   /* Centraliza horizontalmente */
+}
+
+.container .info h1 {
+    font-size: 3rem;           /* Título grande */
+    margin-bottom: 1rem;       /* Espaço abaixo do título */
+}
+
+.container .info h2 {
+    font-size: 1.2rem;         /* Subtítulo menor */
+    margin-bottom: 2rem;       /* Espaço abaixo do subtítulo */
+}
+
+:root {
+    --color-neutral-0:#0e0c0c; /* Variável CSS para cores neutras */
+    --color-neutral-10:#171717;
+    --color-neutral-30:#a8a29e;
+    --color-neutral-40:#f5f5f5;
+}
+
+/* BOOTSTRAP 5 CUSTOMIZAÇÃO */
+
+#projetos .card {
+    background: rgba(255, 255, 255, 0.2); /* Fundo translúcido para cards */
+}
+
+#projetos .card-body {
+    background: transparent;   /* Fundo transparente */
+}
+
+#projetos .card-title,
+#projetos .card-text {
+    color: #fff;               /* Texto branco */
+}
+
+#projetos .card-img-top {
+    height: 275px !important;  /* Altura fixa da imagem */
+    width: 100%;               /* Largura total */
+    object-fit: cover !important; /* Ajusta imagem sem distorcer */
+    display: block;            /* Exibe como bloco */
+}
+
+.carousel-item img {
+    width: 100%;               /* Imagem ocupa toda largura */
+    height: 850px;             /* Altura fixa */
+    object-fit: cover;         /* Ajusta sem distorcer */
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav {
+    padding-left: 1.5rem;      /* Espaço interno à esquerda */
+    padding-right: 1.5rem;     /* Espaço interno à direita */
+}
+
+.footer .card {
+    background-color:#212529;  /* Fundo escuro para cards do footer */
+}
+
+/* FOOTER PERSONALIZADO */
+
+#sobre_nos h5 {
+    font-size: 22px;           /* Tamanho do título */
+    margin-bottom: 10px;       /* Espaço abaixo */
+    color: #adb5bd;            /* Cinza claro */
+}
+
+#sobre_nos p {
+    font-size: 16px;           /* Texto menor */
+    max-width: 750px;          /* Limite de largura */
+    margin: 0 auto 20px auto;  /* Centraliza e dá espaço abaixo */
+    color: #adb5bd;            /* Cinza claro */
+}
+
+#footer_midia {
+    display: flex;             /* Flexbox */
+    justify-content: center;   /* Centraliza horizontalmente */
+    gap: 35px;                 /* Espaço entre ícones */
+    margin: 20px 0;            /* Espaço acima e abaixo */
+}
+
+.footer_link {
+    color: #adb5bd !important; /* Força cor cinza claro */
+    font-size: 22px;           /* Ícones maiores */
+    text-decoration: none;     /* Remove sublinhado */
+    display: flex;             /* Flexbox */
+    align-items: center;       /* Alinha verticalmente */
+    gap: 6px;                  /* Espaço entre ícone e texto */
+}
+
+#footer_midia a[href*="emilainezx"]::after {
+    content: " Emilaine";      /*aparece o nome "Emilaine" depois do link*/
+    font-size: 18px;           /*fonte maior pra ficar visível */
+    color: #adb5bd;          /* padrão de cor cinza claro */
+}
+
+#footer_midia a[href*="Marcelo-Travassos"]::after {
+    content: " Marcelo";       /*aparece o nome "Marcelo" depois do link*/
+    font-size: 18px;           /*fonte maior pra ficar visível */
+    color: #adb5bd;          /* padrão de cor cinza claro */
+}
+
+#footer_midia a[href*="AllyPts"]::after {
+    content: " Allyson";       /*aparece o nome "Allyson" depois do link */
+    font-size: 18px;           /*fonte maior pra ficar visível */
+    color: #adb5bd;          /* padrão de cor cinza claro */
+}
+
+
+#Copyright p {
+    font-size: 14px;           /* Texto pequeno */
+    opacity: 0.8;              /* Transparência */
+    margin-top: 10px;          /* Espaço acima */
+    color: #adb5bd;            /* Cinza claro */
+}
+
+.fonte {
+    font-size: 14px;           /* Texto pequeno */
+    color: #adb5bd !important; /* Força cor cinza claro */
+    text-decoration: none !important; /* Remove sublinhado */
+}
