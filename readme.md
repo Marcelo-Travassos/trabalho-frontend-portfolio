@@ -69,7 +69,7 @@ Após isso, o portfólio estará pronto para uso.
 ## Tecnologias Utilizadas
 
 - **HTML5** – Estruturação do conteúdo  
-- **CSS3** – Estilização e layout visual  
+- **CSS** – Estilização e layout visual  
 - **Bootstrap 5** – Responsividade e componentes prontos  
 - **JavaScript** – Interatividade e comportamento dinâmico  
 - **Font Awesome** – Ícones utilizados na interface  
